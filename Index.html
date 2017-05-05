@@ -17,30 +17,29 @@ body {
          margin: 0;
          padding: 0;
          overflow: hidden;
-         background-color: #333; /*Elije el color del fondo*/
+         background-color: #333; 
         
          }
          li {
            float: left;
              
+                  display: inline;
+                 font-family: 'Love Ya Like A Sister', cursive;
+                 color:white;
+                 font-size:1.5em;
+             
          }
          li a {
          display: block;
-         color: white; /*Elije color de letra*/
+         color: white; 
          text-align: center;
          padding: 14px 16px;
          text-decoration: none;
          }
          li a:hover {
-                  background-color: #111; /*Color cuando el mouse este encima*/
+                  background-color: #111; 
          }
-         li{
-                  display: inline;
-                 font-family: 'Love Ya Like A Sister', cursive;
-                 color:white;
-                 font-size:1.5em;
-                 
-         }
+         
 /*HEADERS*/
 h1 {
     text-align: center;
@@ -262,6 +261,7 @@ font-size:240%;
     <div class="my">
     <img src="data:image/png;base64,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" alt="TED"></div></a>
     <p class="lilo">Ted-Ed (Fundation that gives talks about different topics!!!!)</p>
+        </div>
        
        </section> 
        <section id="videogame">
@@ -363,7 +363,7 @@ font-size:240%;
         </div>
     </section>
         <script>
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 30px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
